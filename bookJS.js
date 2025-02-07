@@ -13,16 +13,19 @@ const pages = document.getElementById("pages");
 const isRead = document.getElementById("read");
 const displayInfo = document.getElementById("display");
 
-document.getElementById("clear").click = function(){
+document.getElementById("clear").onclick = function(){
+    //arrayOfBooks.splice(0,arrayOfBooks.length);
+    //arrayOfBooks.length=0;
     arrayOfBooks=[];
     display();
 };
 
-// document.getElementById("read").onclick = function(){
-//     for(let index=0; index<arrayOfBooks.length; index++){
-//         arrayOfBooks[i][3] != read;
-//         }
-// };
+document.getElementById("read").onclick = function(){
+    for(let index=0; index<arrayOfBooks.length; index++){
+        arrayOfBooks[i][3] != read;
+        }
+        display();
+};
 
 document.getElementById("addBook").onclick = function(){
     const titleOfBook = title.value;
